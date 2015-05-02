@@ -2,7 +2,8 @@
   "name": "github-search",
   "version": "1.0.0",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "author": "Sylvain Faucherand <syl.faucherand@gmail.com>",
   "license": "ISC",
