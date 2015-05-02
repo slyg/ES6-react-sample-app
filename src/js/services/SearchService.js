@@ -1,3 +1,5 @@
+var $ = require('jquery');
+
 const USER_URL = (user) => `https://api.github.com/users/${user}/repos`;
 
 module.exports = {

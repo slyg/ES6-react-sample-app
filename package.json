@@ -1,19 +1,22 @@
 {
-  "name": "search-github",
+  "name": "github-search",
   "version": "1.0.0",
   "scripts": {
-    "build": "brunch build",
-    "watch": "brunch watch --server"
+    "build": "gulp"
   },
   "author": "Sylvain Faucherand <syl.faucherand@gmail.com>",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "flux": "^2.0.3",
+    "jquery": "^2.1.4",
+    "lodash": "^3.8.0",
+    "react": "^0.13.2"
+  },
   "devDependencies": {
-    "auto-reload-brunch": "^1.7.8",
-    "babel-brunch": "^5.0.0",
-    "brunch": "^1.8.1",
-    "css-brunch": "^1.7.0",
-    "sass-brunch": "^1.8.10"
+    "babelify": "^6.0.2",
+    "browserify": "^10.0.0",
+    "gulp": "^3.8.11",
+    "vinyl-source-stream": "^1.1.0"
   },
   "engines": {
     "node": "^1.2.0"

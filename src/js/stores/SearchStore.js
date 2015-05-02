@@ -1,7 +1,9 @@
 var AppDispatcher   = require('../dispatcher/AppDispatcher'),
-    SearchConstants = require('../constants/SearchConstants');
+    SearchConstants = require('../constants/SearchConstants'),
+    {EventEmitter}  = require('events'),
+    _               = require('lodash');
 
-class Store extends EventEmitter2 {
+class Store extends EventEmitter {
 
   constructor (...args) {
     super(...args);

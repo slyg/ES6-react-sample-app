@@ -1,6 +1,7 @@
 var SearchConstants = require('../constants/SearchConstants'),
     AppDispatcher   = require('../dispatcher/AppDispatcher'),
-    SearchService   = require('../services/SearchService');
+    SearchService   = require('../services/SearchService'),
+    _               = require('lodash');
 
 // Do not query too much backend
 const THROTTLE_DELAY = 500;

@@ -1,7 +1,8 @@
 var SearchBox     = require('./SearchBox'),
     SearchResults = require('./SearchResults'),
     SearchStore   = require('../stores/SearchStore'),
-    SearchActions = require('../actions/SearchActions');
+    SearchActions = require('../actions/SearchActions'),
+    React         = require('react');
 
 class App extends React.Component {
 

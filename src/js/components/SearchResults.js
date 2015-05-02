@@ -1,3 +1,6 @@
+var React = require('react'),
+_         = require('lodash');
+
 class SearchResults extends React.Component {
 
   render () {
