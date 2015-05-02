@@ -1,4 +1,4 @@
-var $ = require('jquery');
+var request       = require('superagent');
 
 const USER_URL = (user) => `https://api.github.com/users/${user}/repos`;
 
@@ -6,24 +6,23 @@ module.exports = {
 
   reposQuery: (text) => {
 
-    // circular dependencies not handled by brunch.io :-|
     let SearchActions = require('../actions/SearchActions');
 
-    $.get(USER_URL(text))
+    request.get(USER_URL(text), (err, response) => {
 
-      .done(SearchActions.receiveResults)
-
-      .fail((err) => {
+      if (err) {
 
         if (err.status === 404) {
           return SearchActions.receiveResults([]);
         }
 
-        SearchActions.receiveError(err);
+        return SearchActions.receiveError(err);
 
-      })
+      }
 
-    ;
+      SearchActions.receiveResults(response.body);
+
+    });
 
   }
 
