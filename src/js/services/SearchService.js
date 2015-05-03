@@ -1,4 +1,5 @@
-var request       = require('superagent');
+var request = require('superagent'),
+    SearchActions;
 
 const USER_URL = (user) => `https://api.github.com/users/${user}/repos`;
 
@@ -6,7 +7,7 @@ module.exports = {
 
   reposQuery: (text) => {
 
-    let SearchActions = require('../actions/SearchActions');
+    SearchActions = require('../actions/SearchActions');
 
     request.get(USER_URL(text), (err, response) => {
 
