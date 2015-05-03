@@ -1,5 +1,7 @@
 # Github repos search sample app
 
+[![Circle CI](https://circleci.com/gh/slyg/ES6-react-sample-app.svg?style=svg)](https://circleci.com/gh/slyg/ES6-react-sample-app)
+
 ## Abstract
 
 This application is a test at using the following languages and technologies :
