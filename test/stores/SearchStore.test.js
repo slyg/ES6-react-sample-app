@@ -34,7 +34,7 @@ describe('SearchStore', () => {
       SearchStore = rewire('../../src/js/stores/SearchStore');
     });
 
-    it('#createResult() stores items', () => {
+    it('#createResult() stores a single items', () => {
 
       SearchStore.createResult('hello');
 
@@ -46,9 +46,9 @@ describe('SearchStore', () => {
 
     });
 
-    it('#setResults() batch stores items', () => {
+    it('#createResults() batch stores items', () => {
 
-      SearchStore.setResults(['hello', 'world']);
+      SearchStore.createResults(['hello', 'world']);
 
       var results = SearchStore.getResults();
 

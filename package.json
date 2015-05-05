@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "flux": "^2.0.3",
+    "immutable": "^3.7.2",
     "lodash": "^3.8.0",
     "react": "^0.13.2",
     "superagent": "^1.2.0"
